@@ -1,0 +1,28 @@
+[viewBag]
+==
+<div class="lt-navbar navbar-fixed">
+  <nav class="lt-no-background">
+    <div class="nav-wrapper">
+      <div class="lt-container container">
+        <a href="{{ 'home'|page }}" class="brand-logo white-text" style="margin-top:6px;">
+        <img width="180" src="{{ 'assets/img/cashtag_white.png'|theme }}" alt="image">
+        </a>
+        <a href="#" data-activates="mobile-menu" class="lt-mobile-toggle button-collapse"><i class="material-icons">menu</i></a>
+        <ul class="right hide-on-med-and-down">
+          <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
+          <li class="{% if this.page.id == 'about' %}active{% endif %}"><a href="{{ 'about'|page }}">About</a></li>
+          <li class="{% if this.page.id == 'borrowers' %}active{% endif %}"><a href="{{ 'borrowers'|page }}">Borrowers</a></li>
+          <li class="{% if this.page.id == 'partners' %}active{% endif %}"><a href="{{ 'partners'|page }}">Partners</a></li>
+          <li class="{% if this.page.id == 'contact' %}active{% endif %}"><a href="{{ 'contact'|page }}">Contact</a></li>
+        </ul>
+        <ul class="side-nav" id="mobile-menu">
+          <li class="{% if this.page.id == 'home' %}active{% endif %}"><a href="{{ 'home'|page }}">Home</a></li>
+          <li class="{% if this.page.id == 'about' %}active{% endif %}"><a href="{{ 'about'|page }}">About</a></li>
+          <li class="{% if this.page.id == 'borrowers' %}active{% endif %}"><a href="{{ 'borrowers'|page }}">Borrowers</a></li>
+          <li class="{% if this.page.id == 'partners' %}active{% endif %}"><a href="{{ 'partners'|page }}">Partners</a></li>
+          <li class="{% if this.page.id == 'contact' %}active{% endif %}"><a href="{{ 'contact'|page }}">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
